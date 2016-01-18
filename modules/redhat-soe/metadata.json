@@ -1,0 +1,17 @@
+{
+  "name": "redhat-soe",
+  "version": "0.1.0",
+  "author": "redhat",
+  "summary": "Example puppet module for SOE.",
+  "license": "GPL v3",
+  "source": "https://github.com/msolberg/puppet-soe",
+  "issues_url": "https://github.com/msolberg/puppet-soe/issues",
+  "project_page": "https://github.com/msolberg/puppet-soe",
+  "dependencies": [
+    {
+      "version_range": ">= 1.0.0",
+      "name": "puppetlabs-stdlib"
+    }
+  ]
+}
+
