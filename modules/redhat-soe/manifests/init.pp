@@ -34,7 +34,7 @@ class soe (
   }
   
   # Make sure that the puppet agent is installed
-  package { 'puppet-agent':
+  package { 'puppet':
     ensure => installed,
   }
   
