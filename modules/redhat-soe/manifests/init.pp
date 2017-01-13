@@ -1,8 +1,7 @@
 # == Class: soe
 #
 # This is an example puppet module which can be used as a starting
-# point for developing a Standard Operating Environment with Red Hat
-# Satellite 6.
+# point for developing a Standard Operating Environment with Foreman
 #
 # === Parameters
 #
@@ -34,13 +33,13 @@ class soe (
     content => template('soe/motd.erb')
   }
   
-  # Make sure that the katello agent is installed
-  package { 'katello-agent':
+  # Make sure that the puppet agent is installed
+  package { 'puppet-agent':
     ensure => installed,
   }
   
-  # Ensure that goferd is running
-  service { 'goferd':
+  # Ensure that the puppet agent is running
+  service { 'puppet':
     ensure => running,
     enable => true,
   }
