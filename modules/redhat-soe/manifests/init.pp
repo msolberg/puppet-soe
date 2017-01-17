@@ -43,5 +43,10 @@ class soe (
     ensure => running,
     enable => true,
   }
+  
+  # Ensure that the wget package is installed
+  package { 'wget':
+    ensure => installed,
+  }
 
 }
