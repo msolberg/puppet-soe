@@ -49,10 +49,4 @@ class soe (
     ensure => installed,
   }
 
-  # Ensure that the ntp package is installed
-  package { 'ntp':
-    ensure => installed,
-  }
-
-
 }
