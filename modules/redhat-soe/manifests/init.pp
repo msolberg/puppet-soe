@@ -49,4 +49,11 @@ class soe (
     ensure => installed,
   }
 
+  # Ensure that the wget package is installed
+  package { 'vim-enhanced':
+    ensure => installed,
+  }
+
+
+
 }
